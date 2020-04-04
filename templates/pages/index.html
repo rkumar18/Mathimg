@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+{% block content %}
+<h1>hello</h1>
+    <form  method="post">
+    {% csrf_token %}
+     <input type="file" id="Img" name="filename">
+        <input type="submit">
+    <button type="submit" class="btn btn-primary"> login </button>
+    </form>
+{% endblock %}
